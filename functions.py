@@ -152,7 +152,7 @@ def data_type_check(invoice_df, line_items_df, total_summary_df):
         # Validate and convert numeric columns in line_items_df
         numeric_cols_items = ['quantity', 'rate_per_item_after_discount', 'taxable_value',
                               'sgst_amount', 'cgst_amount', 'igst_amount', 'tax_amount',
-                              'tax_rate', 'final_amount', 'sgst_rate', 'cgst_rate']
+                              'tax_rate', 'final_amount', 'sgst_rate', 'cgst_rate', 'igst_rate']
         for col in numeric_cols_items:
             if col in line_items_df.columns:
                 mask = ~line_items_df[col].isna()
