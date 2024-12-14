@@ -1,5 +1,4 @@
 streamlit
 requests
-zipfile
-io
-copy
+pandas
+numpy
